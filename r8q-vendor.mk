@@ -351,6 +351,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/lib64/libhigh_dynamic_range_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhigh_dynamic_range_bokeh.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_interface.so \
+    vendor/samsung/r8q/proprietary/vendor/lib64/libimgproc_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgproc_sw.unifunc.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/libjpegencoder_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder_sw.unifunc.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
     vendor/samsung/r8q/proprietary/vendor/lib64/liblivefocus_capture_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_capture_engine.so \
