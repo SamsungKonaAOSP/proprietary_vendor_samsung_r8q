@@ -17,7 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Headset_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/Speaker_cal.acdb \
     vendor/samsung/r8q/proprietary/vendor/etc/audconf/OPEN/workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/audconf/OPEN/workspaceFile.qwsp \
-    vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service-gto-sku.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service-gto-sku.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/init/android.hardware.secure_element@1.0-service-sku.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.0-service-sku.rc \
     vendor/samsung/r8q/proprietary/vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nxp.android.hardware.nfc@1.2-service.rc \
@@ -91,17 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/firmware/qca6390/bdwlan.elf2:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6390/bdwlan.elf2 \
     vendor/samsung/r8q/proprietary/vendor/firmware/qca6390/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6390/m3.bin \
     vendor/samsung/r8q/proprietary/vendor/firmware/qca6390/regdb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca6390/regdb.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx555.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.0_0_sony_imx555.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.sensormodule.12_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.12_sony_imx616_full.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.sensormodule.3_hynix_hi847.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.sensormodule.3_hynix_hi847.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.tuned.hynix_hi847.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.hynix_hi847.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx555.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx555.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
-    vendor/samsung/r8q/proprietary/vendor/lib/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/ois_mcu_stm32g_fw.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin \
@@ -115,6 +103,29 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r8q/proprietary/vendor/lib64/camera/ois_mcu_stm32g_fw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/ois_mcu_stm32g_fw.bin
 
 PRODUCT_PACKAGES += \
+    sound_trigger.primary.kona \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libaudcal \
+    libbauthserver \
+    libbauthtzcommon \
+    libgcs-calwrapper \
+    libgcs-ipc \
+    libgcs-osal \
+    libgcs \
+    libgf_in_system_lib \
+    libqfp_sensortest \
+    audio.primary.r8q \
+    K32QS_libTsAeFront \
+    K32QS_libTsAfFront \
+    K32QS_libTsAwbFront \
+    X12QS_libTsAe \
+    X12QS_libTsAf \
+    X12QS_libTsAwb \
+    X12QS_libTsPdafm \
+    android.hardware.secure_element-impl-gto \
     com.samsung.sensor.s5k3l6 \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
@@ -151,6 +162,7 @@ PRODUCT_PACKAGES += \
     com.ss.stats.aec \
     com.ss.stats.af \
     com.ss.stats.awb \
+    com.ss.stats.pdlib \
     libdepthmapwrapper \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
@@ -167,11 +179,10 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.serializer \
     com.qti.feature2.stub \
     com.qti.feature2.swmf \
-    android.hardware.bluetooth@1.0-impl-qti \
+    ese_spi_nxp \
     camera.qcom \
     camera.unihal.default \
     com.qti.chi.override \
-    sound_trigger.primary.kona \
     libBeauty_v4.camera.samsung \
     libBlurDetectionDeepLearning.camera.samsung \
     libDualCamBokehCapture.camera.samsung \
@@ -182,81 +193,44 @@ PRODUCT_PACKAGES += \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
     libIMUSensor \
     libImageFormatConverter \
-    libLocalTM_capture_core.camera.samsung \
-    libLocalTM_preview_core \
-    libLocalTM_wrapper.camera.samsung \
     libPanDetector \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
+    libSingleTakeBlurDetection.uniplugin@1.0 \
     libarcsoft_superresolution_bokeh \
-    libaudcal \
-    libbauthserver \
-    libbauthtzcommon \
     libbeautyshot.arcsoft \
     libcamerapostproc \
     libcamxexternalformatutils \
     libcamximageformatutils \
     libcamxncs \
     libdualcam_refocus_image \
-    libdualcam_refocus_video \
+    libevent_finder.uniplugin@1.0 \
     libface_landmark.arcsoft \
     libformatConverter.unifunc \
-    libgcs-calwrapper \
-    libgcs-ipc \
-    libgcs-osal \
-    libgcs \
-    libgf_in_system_lib \
     libhigh_dynamic_range_bokeh \
     libhypermotion_core \
     libhypermotion_interface \
     libimgproc_sw.unifunc \
     libjpegencoder_sw.unifunc \
-    liblbs_core \
     liblivefocus_capture_engine \
     liblivefocus_capture_interface \
     liblivefocus_preview_engine \
     liblivefocus_preview_interface \
-    libloc_api_v02 \
-    liblowi_wifihal \
-    libofflinelog \
-    libqfp_sensortest \
+    libpantilt_detector.uniplugin@1.0 \
     libsaped \
     libscaler_hw.unifunc \
     libtensorflowLite.singletake.camera.samsung \
+    libthirdparty_zoomtranslator_imp \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libvdis_core \
     libvdis_interface \
+    nfc_nci_nxpsn \
+    nfc_nci_sec \
     sensors.flicker \
     sensors.grip \
     sensors.ssc \
     unihal_cutils@2.1 \
     unihal_main@2.1 \
-    audio.primary.r8q \
-    libSingleTakeBlurDetection.uniplugin@1.0 \
-    lib_SamsungRec_07020 \
-    libbatterylistener \
-    libevent_finder.uniplugin@1.0 \
-    libpantilt_detector.uniplugin@1.0 \
-    librecordalive \
-    vendor.samsung.hardware.bluetooth@2.0 \
-    K32QS_libTsAeFront \
-    K32QS_libTsAfFront \
-    K32QS_libTsAwbFront \
-    X12QS_libTsAe \
-    X12QS_libTsAf \
-    X12QS_libTsAwb \
-    X12QS_libTsPdafm \
-    android.hardware.secure_element-impl-gto \
-    com.ss.stats.pdlib \
-    ese_spi_nxp \
-    libHumanSegVideoModel_Vendor \
-    libthirdparty_zoomtranslator_imp \
-    nfc_nci_nxpsn \
-    nfc_nci_sec \
     vendor.samsung.hardware.nfc@2.0 \
     HotwordEnrollmentOKGoogleEx3HEXAGON \
     HotwordEnrollmentXGoogleEx3HEXAGON \
@@ -264,7 +238,6 @@ PRODUCT_PACKAGES += \
     cnss-daemon \
     cnss_diag \
     factory.ssc \
-    android.hardware.bluetooth@1.0-service-qti \
     android.hardware.secure_element@1.0-service \
     android.hardware.secure_element@1.0-service-gto \
     nxp.android.hardware.nfc@1.2-service
